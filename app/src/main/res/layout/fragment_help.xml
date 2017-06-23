@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="BUBBLE FUSION"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:text="Tap on the bubbles to change its color." />
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="48dp"
+                        android:elevation="16dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintLeft_toLeftOf="@+id/hClickBubble"
+                        app:layout_constraintTop_toTopOf="@+id/hClickBubble"
+                        app:srcCompat="@mipmap/hand" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/hClickBubble"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:clickable="false"
+                        app:backgroundTint="@color/colorBubble3"
+                        app:elevation="2dp"
+                        app:fabSize="mini"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:elevation="0dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:text=" Changing color will reduce the bubble point."
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/hClickBubble" />
+                </android.support.constraint.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:text="Make all the neighboring bubbles of same color and then tap on it to fuse." />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="48dp"
+                        android:elevation="16dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintLeft_toLeftOf="@+id/hFuseBubble3"
+                        app:layout_constraintTop_toTopOf="@+id/hFuseBubble3"
+                        app:srcCompat="@mipmap/hand" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/hFuseBubble3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginEnd="86dp"
+                        android:layout_marginRight="86dp"
+                        android:clickable="true"
+                        app:backgroundTint="@color/colorBubble4"
+                        app:fabSize="mini"
+                        app:layout_constraintBottom_toBottomOf="@+id/hFuseBubble1"
+                        app:layout_constraintRight_toRightOf="@+id/hFuseBubble1" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginLeft="86dp"
+                        android:layout_marginStart="86dp"
+                        android:clickable="true"
+                        app:backgroundTint="@color/colorBubble1"
+                        app:fabSize="mini"
+                        app:layout_constraintBottom_toBottomOf="@+id/hFuseBubble1"
+                        app:layout_constraintLeft_toLeftOf="@+id/hFuseBubble1" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:clickable="true"
+                        app:backgroundTint="@color/colorBubble4"
+                        app:fabSize="mini"
+                        app:layout_constraintBottom_toTopOf="@+id/hFuseBubble1"
+                        app:layout_constraintLeft_toLeftOf="@+id/hFuseBubble1" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/hFuseBubble12"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:clickable="true"
+                        app:backgroundTint="@color/colorBubble2"
+                        app:fabSize="mini"
+                        app:layout_constraintLeft_toLeftOf="@+id/hFuseBubble1"
+                        app:layout_constraintTop_toBottomOf="@+id/hFuseBubble1" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="86dp"
+                        android:layout_marginRight="86dp"
+                        android:layout_marginTop="50dp"
+                        android:clickable="true"
+                        app:backgroundTint="@color/colorBubble4"
+                        app:fabSize="mini"
+                        app:layout_constraintRight_toRightOf="@+id/hFuseBubble1"
+                        app:layout_constraintTop_toTopOf="@+id/hFuseBubble1" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="86dp"
+                        android:layout_marginStart="86dp"
+                        android:layout_marginTop="50dp"
+                        android:clickable="true"
+                        app:backgroundTint="@color/colorBubble3"
+                        app:fabSize="mini"
+                        app:layout_constraintLeft_toLeftOf="@+id/hFuseBubble1"
+                        app:layout_constraintTop_toTopOf="@+id/hFuseBubble1" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/hFuseBubble1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="108dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:clickable="true"
+                        app:backgroundTint="@color/colorBubble4"
+                        app:fabSize="mini"
+                        app:layout_constraintBottom_toBottomOf="@+id/hFuseBubble12"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:text="Or" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginEnd="86dp"
+                        android:layout_marginRight="86dp"
+                        android:clickable="true"
+                        app:backgroundTint="@color/colorBubble1"
+                        app:fabSize="mini"
+                        app:layout_constraintBottom_toBottomOf="@+id/hFuseBubble8"
+                        app:layout_constraintRight_toRightOf="@+id/hFuseBubble8" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:clickable="true"
+                        app:backgroundTint="@color/colorBubble1"
+                        app:fabSize="mini"
+                        app:layout_constraintBottom_toTopOf="@+id/hFuseBubble8"
+                        app:layout_constraintRight_toRightOf="@+id/hFuseBubble8" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginLeft="86dp"
+                        android:layout_marginStart="86dp"
+                        android:clickable="true"
+                        app:backgroundTint="@color/colorBubble1"
+                        app:fabSize="mini"
+                        app:layout_constraintBottom_toTopOf="@+id/hFuseBubble11"
+                        app:layout_constraintLeft_toLeftOf="@+id/hFuseBubble8" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="86dp"
+                        android:layout_marginStart="86dp"
+                        android:layout_marginTop="50dp"
+                        android:clickable="true"
+                        app:backgroundTint="@color/colorBubble1"
+                        app:fabSize="mini"
+                        app:layout_constraintLeft_toLeftOf="@+id/hFuseBubble8"
+                        app:layout_constraintTop_toTopOf="@+id/hFuseBubble8" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="86dp"
+                        android:layout_marginRight="86dp"
+                        android:layout_marginTop="50dp"
+                        android:clickable="true"
+                        app:backgroundTint="@color/colorBubble1"
+                        app:fabSize="mini"
+                        app:layout_constraintRight_toRightOf="@+id/hFuseBubble8"
+                        app:layout_constraintTop_toTopOf="@+id/hFuseBubble8" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/hFuseBubble11"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:clickable="true"
+                        app:backgroundTint="@color/colorBubble1"
+                        app:fabSize="mini"
+                        app:layout_constraintLeft_toLeftOf="@+id/hFuseBubble8"
+                        app:layout_constraintTop_toBottomOf="@+id/hFuseBubble8" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/hFuseBubble8"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="108dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:clickable="true"
+                        app:backgroundTint="@color/colorBubble1"
+                        app:fabSize="mini"
+                        app:layout_constraintBottom_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="48dp"
+                        android:elevation="16dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintLeft_toLeftOf="@+id/hFuseBubble8"
+                        app:layout_constraintTop_toTopOf="@+id/hFuseBubble8"
+                        app:srcCompat="@mipmap/hand" />
+                </android.support.constraint.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:text="Fusion will sum up the points and create new bubbles." />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:text="Each new bubble is of 7 point." />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="56dp"
+                    android:gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:text="Happy Playing :)" />
+
+            </LinearLayout>
+            </ScrollView>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/helpOkButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="4dp"
+                app:backgroundTint="@color/colorBubble4" />
+        </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

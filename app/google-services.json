@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1020896781910",
+    "firebase_url": "https://bubble-fusion.firebaseio.com",
+    "project_id": "bubble-fusion",
+    "storage_bucket": "bubble-fusion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020896781910:android:1db307d0a2fe66a4",
+        "android_client_info": {
+          "package_name": "co.amrit.bubbler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020896781910-ghj024f9bgst0l8bmfqf8nh9ahn2umj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRrMWGyplD664IIv11D1SqUsVP50C0Vr8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
